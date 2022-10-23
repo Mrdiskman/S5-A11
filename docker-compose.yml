@@ -11,8 +11,8 @@ services:
     depends_on:
       db:
         condition: service_healthy
-    volumes:
-      - .:/app
+    # volumes:
+    #   - .:/app
 
   db:
     container_name: db
@@ -27,5 +27,3 @@ services:
       timeout: 5s
       retries: 5
       start_period: 5s
-   
-

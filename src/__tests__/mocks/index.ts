@@ -1,7 +1,7 @@
 import { IUserLogin,IUserRequest } from "../../interfaces/users";
 import { IScheduleRequest } from "../../interfaces/schedules";
-import { IPropertyRequest } from "../../interfaces/properties";
-import { ICategoryRequest } from "../../interfaces/categories";
+import { IPropertyRequest } from "../../interfaces/property";
+import { ICategoryRequest } from "../../interfaces/category";
 
 export const mockedUser : IUserRequest = {
     name: "Joana",
