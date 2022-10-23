@@ -7,7 +7,7 @@ import verifyIsAdmMiddleware from "../middlewares/verifyIsAdm.middleware";
 
 const router = Router();
 router.post("", ensureAuthMiddleware, createSchedulesController);
-router.get("", ensureAuthMiddleware, verifyIsAdmMiddleware, listScheduleController)
+router.get("/properties/:id", ensureAuthMiddleware, verifyIsAdmMiddleware, listScheduleController)
 
 export default router;
  

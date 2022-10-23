@@ -1,7 +1,7 @@
 import AppDataSource from "../../data-source";
 import { User } from "../../entities/user.entity";
 import { IUserUpdate } from "../../interfaces/users";
-import { hash } from "bcrypt";
+import { hash } from "bcryptjs";
 import { appError } from "../../errors/appError";
 
 const updateUserService = async (id: string, newData: IUserUpdate) => {

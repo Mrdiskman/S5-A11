@@ -2,7 +2,7 @@ import "dotenv/config";
 import AppDataSource from "../../data-source";
 import { User } from "../../entities/user.entity";
 import { IUserLogin } from "../../interfaces/users";
-import bycrypt from "bcrypt";
+import bycrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 const userLoginService = async ({ email, password }: IUserLogin) => {

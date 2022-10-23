@@ -6,9 +6,9 @@ const createSchedulesController = async (req: Request, res: Response) => {
     const id = req.user.id
     const newSchedule =await createSchedullesService(body, id)
 
-    return res.status(201).json(newSchedule);
+    return res.status(201).json({message: "Successful"});
 }
 
 
 
-  export default createSchedulesController
+  export default createSchedulesController 

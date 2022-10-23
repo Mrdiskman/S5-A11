@@ -2,7 +2,6 @@ import {
   Entity,
   Column,
   PrimaryGeneratedColumn,
-  ManyToMany,
   ManyToOne,
 } from "typeorm";
 
@@ -24,7 +23,7 @@ export class Schedule {
   @ManyToOne(() => Propertie, (propertie)=> propertie.schedules)
   property: Propertie;
 
-  @ManyToOne(()=> User, (user)=> user.schedules)
+  @ManyToOne(()=> User, (user)=> user.schedules, {eager:true})
   user:User
   
   constructor() {
